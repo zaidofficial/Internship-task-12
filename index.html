@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Meet the Team</title>
+<link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <h1>Meet Our Team</h1>
+    <p class="subtitle">Get to know the people behind the projects</p>
+</header>
+
+<div class="search-box">
+    <input onkeyup="searchTeam()" type="text" id="searchInput" placeholder="Search by name or role...">
+</div>
+
+<main class="team-section">
+    <!-- Card 1 -->
+    <div class="team-card fade-in-on-scroll">
+        <img src="gohar.jpeg" alt="Profile Photo">
+        <h2>Ali Gohar</h2>
+        <p class="role">Frontend Developer Intern</p>
+        <p class="bio">Loves building interactive UI/UX Design.</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/ali-gohar-9b7190235/?originalSubdomain=pk"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Gohar24"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="btn" onclick="openModal('Ali Gohar')">More Details</button>
+    </div>
+
+    <!--  card 2 -->
+    <div class="team-card fade-in-on-scroll">
+        <img src="zaid.png" alt="Profile Photo">
+        <h2>Muhammad Zaid</h2>
+        <p class="role">Backend Developer Intern</p>
+        <p class="bio">Passionate about APIs and problem solving.</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/muhammad-zaid-9897a7255/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/zaidofficial"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="btn" onclick="openModal('Muhammad Zaid')">More Details</button>
+    </div>
+
+    <!--  card 3 -->
+    <div class="team-card fade-in-on-scroll">
+        <img src="asif.jpg" alt="Profile Photo">
+        <h2>Asif Ali</h2>
+        <p class="role">Graphic Designer</p>
+        <p class="bio">Passionate about APIs and problem solving.</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/asif649"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="btn" onclick="openModal('Asif Ali')">More Details</button>
+    </div>
+
+    <!--  card 4 -->
+    <div class="team-card fade-in-on-scroll">
+        <img src="azam.jpeg" alt="Profile Photo">
+        <h2>Muhammad Azam</h2>
+        <p class="role">MERN Stack Developer</p>
+        <p class="bio">Passionate about APIs and databases.</p>
+        <div class="socials">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/azamr1"><i class="fab fa-github"></i></a>
+        </div>
+        <button class="btn" onclick="openModal('Muhammad Azam')">More Details</button>
+    </div>
+<button id="scrollToTop">↑</button>
+</main>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <h2 id="modalName">Name</h2>
+        <p>More details about the team member will appear here.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
